@@ -4,6 +4,4 @@ import { Component } from '@angular/core';
   selector: 'view-a',
   templateUrl: './viewA.component.html',
 })
-export class ViewAComponent {
-    WORLD = 'mundo';
-}
+export class ViewAComponent {}
