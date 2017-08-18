@@ -5,5 +5,5 @@ import { Component } from '@angular/core';
   templateUrl: './viewA.component.html',
 })
 export class ViewAComponent {
-    mundo = 'algo';
+    WORLD = 'mundo';
 }
