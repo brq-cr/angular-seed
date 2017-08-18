@@ -11,7 +11,7 @@ import { AppRouterModule } from './app.router.module';
   ],
   imports: [
     BrowserModule,
-    AppRouterModule
+    AppRouterModule,
   ],
   bootstrap: [AppComponent]
 })
