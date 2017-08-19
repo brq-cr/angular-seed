@@ -27,9 +27,7 @@ export class JokeEffects {
   @Effect() getJoke$: Observable<Action> = this.actions$
     .ofType(Joke.ActionTypes.GET_RANDOM)
     .switchMap(() => this.jokeService.getRandomJokeFromServer())
-    .map(joke => {
-      return new Joke.GetRandomSuccessAction(joke);
-    })
+    .map(joke => new Joke.GetRandomSuccessAction(joke))
     .catch(error => Observable.of(new Joke.GetRandomSuccessAction(error)));
 
   

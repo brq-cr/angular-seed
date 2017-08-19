@@ -5,7 +5,7 @@ interface IState {
 }
 
 const initialState: IState = {
-  randomJoke: ''
+  randomJoke: `Click "Get a joke !" to try`
 };
 
 export function jokeReducer(
