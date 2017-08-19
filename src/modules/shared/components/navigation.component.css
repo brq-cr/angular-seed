@@ -1,0 +1,20 @@
+.main-navigation ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.main-navigation ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 20px;
+    padding: 0;
+}
+
+.active {
+    font-weight: bold; 
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}

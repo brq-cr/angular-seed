@@ -1,0 +1,5 @@
+<main-navigation></main-navigation>
+<div>
+    <joke-render [joke]="joke$ | async"></joke-render>
+    <button (click)="getRandomJoke()">Get a Joke !</button>
+</div>
