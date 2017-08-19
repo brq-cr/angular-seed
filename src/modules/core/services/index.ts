@@ -1,5 +1,7 @@
-// import { AdService }  from './ad.service';
+import { JokeService } from './joke.service';
 
-export const SERVICES = [];
+export const SERVICES: any[] = [
+  JokeService
+];
 
-// export *  from './ad.service';
+export * from './joke.service';

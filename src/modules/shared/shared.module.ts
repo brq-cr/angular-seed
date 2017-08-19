@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 import {
   COMPONENTS,
 } from './components';
+
 
 /**
  * SharedModule
@@ -21,6 +23,7 @@ import {
   ],
   exports: [
     ...COMPONENTS,
+    CommonModule,
   ]
 })
 export class SharedModule {}

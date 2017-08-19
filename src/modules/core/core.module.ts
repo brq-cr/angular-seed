@@ -2,20 +2,19 @@ import { NgModule } from '@angular/core';
 import { StoreModule } from '@ngrx/store';
 import { StoreRouterConnectingModule } from '@ngrx/router-store';
 import { EffectsModule } from '@ngrx/effects';
+import { HttpModule } from '@angular/http';
 
 import {
   SERVICES, 
 } from './services';
 
 import {
-  ACTIONS,
-} from './actions';
-
-import {
-  EFFECTS, 
+  JokeEffects
 } from './effects';
 
-import { reducer } from './reducers';
+import { 
+  reducers 
+} from './reducers';
 
 /**
  * Do not specify providers for modules that might be imported by a lazy loaded module.
@@ -23,12 +22,15 @@ import { reducer } from './reducers';
 
 @NgModule({
   imports: [
-    StoreModule.forRoot(reducer),
+    HttpModule,
+    EffectsModule.forRoot([
+      JokeEffects,
+    ]),
+    StoreModule.forRoot(reducers),
     StoreRouterConnectingModule,
-    // EffectsModule.run(),
   ],
-  exports: [
-    StoreModule,
+  providers: [
+    ...SERVICES,
   ]
 })
 export class CoreModule {}

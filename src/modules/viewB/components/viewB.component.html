@@ -1,2 +1,5 @@
 <main-navigation></main-navigation>
-<h4>View B</h4>
+<div>
+    <joke-render [joke]="joke$ | async"></joke-render>
+    <button>Get a Joke !</button>
+</div>
