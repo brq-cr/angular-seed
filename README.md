@@ -1,4 +1,4 @@
-# CliUpdate
+# Angular seed with ngRx 4.x and lazy load
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.1.
 
